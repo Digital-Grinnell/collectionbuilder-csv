@@ -17,6 +17,14 @@ padding: 6em
 # Edit the markdown on in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
+## About Digital Grinnell
+[Digital Grinnell](https://grinnell.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=01GCL_INST:GCL&collectionId=81302943070004641) contributes to “free inquiry and the open exchange of ideas” through the preservation and publication of scholarship created by Grinnell College students, faculty, and staff, as well as selected material that illuminates the College’s history and other activities.
+
+## About Grinnell College Libraries
+The 11 faculty librarians and 19 staff of the [Grinnell College Libraries](https://www.grinnell.edu/academics/libraries/about-us) — Burling Library, the Kistle Science Library, and the Curriculum Library — are dedicated to helping Grinnell students, faculty, and staff succeed in learning, teaching, and research. Our services emphasize working closely with students to develop fluency in the use and evaluation of information sources as they conduct research and other intellectual investigations, through individualized research appointments, classroom instruction, and drop-in research assistance. Each academic department and concentration has a professional librarian assigned as its liaison, and we work closely with our campus colleagues to integrate writing, reading, data analysis, academic advising, and other services. The Libraries’ book, journal, data, and media collections — in analog and digital formats — are wide-ranging and intellectually challenging, representing multiple viewpoints, languages, and cultures, and we are part of a worldwide network of libraries that can bring you information from all parts of the globe. We offer a variety of spaces for quiet and collaborative study, practicing presentations, and relaxing, and we sponsor readings, lectures, and musical performances throughout the year. We’re also part of the Grinnell town community; residents are welcome to borrow from our collection, use our facilities, and enjoy our events.
+
+As the world of information grows more complex — available in more formats, from more sources, with confusing questions about copyright and reliability — libraries are more central to learning than ever before. We look forward to working with you!
+
 
 ## About CollectionBuilder CSV
 
