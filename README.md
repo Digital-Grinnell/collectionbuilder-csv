@@ -1,3 +1,90 @@
+# Digital-Grinnell/collectionbuilder-csv
+
+This is a `fork` of [CollectionBuilder/collectionbuilder-csv](https://github.com/CollectionBuilder/collectionbuilder-csv) with added GC-specific additions from Mark M., Libby C., and others.  
+
+> This repo should be the basis for all non-oral-history GC CB projects of the future.  Note that there is a separate GC template repo for Oral History projects because that's the way the CollectionBuilder folks have structured the underlying code.  
+
+See it in action at  
+## https://victorious-sea-07a73ff10.2.azurestaticapps.net/ 
+
+# Bulding Locally
+
+Like other CB projects, the website from this repository can be easily built -- assuming your machine has all the necessary CB/Jekyll configuration -- using a simple command of the form:  
+
+```
+bundle exec jekyll serve
+```
+
+# Development Site as an Azure Static Web App
+
+Likewise, this project has been configured with a corresponding Azure Static Web App to simplify collaboration while demonstrating and testing pre-production deployment.  
+
+The Azure configuration was created following the workflow documented at [Deploy your web app](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-jekyll#deploy-your-web-app).
+
+I choose the `jekyll` (automatically detected) build option rather than `Custom`, and used all the default configuration choices.  I got this workflow file AND added the `env:` section to complete the Azure config...
+
+```yaml
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+
+jobs:
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          lfs: false
+      - name: Build And Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_<GENERATED_HOSTNAME> }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          action: "upload"
+          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
+          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+          app_location: "/" # App source code path
+          api_location: "" # Api source code path - optional
+          output_location: "_site" # Built app content directory - optional
+          ###### End of Repository/Build Configurations ######
+        env: # Add environment variables here
+          JEKYLL_ENV: production
+          TZ: America/Chicago
+ 
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_<GENERATED_HOSTNAME> }}
+          action: "close"
+```
+
+Following the aforementioned procedure eventually produced the site https://victorious-sea-07a73ff10.2.azurestaticapps.net.
+
+This workflow uses GitHub Actions to deploy and you can see the status of deployment at https://github.com/Digital-Grinnell/collectionbuilder-csv/actions.
+
+> Note that pushing changes to the `main` branch of this repository will automatically re-build https://victorious-sea-07a73ff10.2.azurestaticapps.net/!  
+
+
+```
+What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.
+```
 # CollectionBuilder-CSV
 
 CollectionBuilder-CSV is a robust and flexible "stand alone" template for creating digital collection and exhibit websites using Jekyll and a metadata CSV.
