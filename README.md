@@ -81,6 +81,75 @@ This workflow uses GitHub Actions to deploy and you can see the status of deploy
 
 > Note that pushing changes to the `main` branch of this repository will automatically re-build https://victorious-sea-07a73ff10.2.azurestaticapps.net/!  
 
+# Updated Local Clone from Upstream
+
+This is the recommended workflow...  
+
+Here's a breakdown of how to pull changes from the original repository (upstream) to your local clone of a GitHub fork:  
+
+## Add the Original Repository as a Remote (Only Needed Once!)
+
+This step tells your local Git repository about the original repository from which you forked. You can name this remote "upstream" (a common convention).
+
+```zsh
+git remote add upstream https://github.com/CollectionBuilder/collectionbuilder-csv
+```
+
+In the above command I replaced ORIGINAL-OWNER and ORIGINAL-REPOSITORY with the actual owner and repository name of the original project.  
+
+## Verify the Upstream Remote
+
+You can check if the upstream remote has been added correctly by listing the configured remotes:  
+
+```zsh
+git remote -v
+```
+
+You should see URLs for both 'origin' (your fork) and 'upstream' (the original repository).
+
+## Fetch Changes From the Upstream
+
+This downloads the updates from the original repository but doesn't merge them into your current branch yet.  
+
+```zsh
+git fetch upstream
+```
+
+If you only want to fetch changes from a specific branch (e.g., main), you can specify it:  
+
+```zsh
+git fetch upstream main
+```
+
+## Merge the Changes
+
+If you're on your local main (or default) branch:  
+
+```zsh
+git checkout main        # or your default branch
+git merge upstream/main  # or upstream/your-default-branch
+```
+
+This will merge the fetched changes from the upstream's main (or default) branch into your local main (or default) branch. If you're on a feature branch and want to incorporate the latest upstream changes:
+It's often recommended to first update your local main (or default) branch, then rebase your feature branch on top of it to maintain a cleaner history.  
+
+```zsh
+git checkout main
+git merge upstream/main  # or git pull upstream main (equivalent to fetch + merge)
+git checkout your-feature-branch
+git rebase main
+```
+
+## Resolve Conflicts (If Any)
+
+If there are conflicts during the merge, Git will notify you. You'll need to manually resolve these conflicts in the conflicting files.  Push the updated changes to your fork on GitHub:  
+
+```zsh
+git push origin main  # or git push origin your-branch-name
+```
+
+This updates your online fork with the changes you've pulled from the upstream.  
+
 
 ```
 What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.
