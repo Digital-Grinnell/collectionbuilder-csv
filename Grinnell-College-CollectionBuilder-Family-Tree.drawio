@@ -122,6 +122,9 @@
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="MkRkW_FTMVN4ikkAUPbI-4" value="&lt;div align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Grinnell College CollectionBuilder Family Tree&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Portions of this diagram use Charlie Duke&#39;s physics museum project as an example.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;strokeColor=default;strokeWidth=3;labelPadding=10;perimeterSpacing=3;fixDash=0;container=0;spacingLeft=5;spacingBottom=5;spacingRight=5;spacingTop=5;spacing=5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="760" y="70" width="290" height="250" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
