@@ -2,8 +2,8 @@
 layout: page-narrow
 title: About Oral History as Data
 order: 1
-object-id: Xabout
-permalink: /Xabout.html
+object-id: about-OHD
+permalink: /about-OHD.html
 ---
 
 ## About This Template/Demo Site 
