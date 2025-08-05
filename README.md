@@ -1,11 +1,3 @@
-# Digital-Grinnell/GCCB-physics-museum
-
-This project is a reflection of `Digital-Grinnell/collectionbuilder-csv` with Physics Museum-specific content gleaned from Charlie Duke's `https://github.com/dukecld/cb-indep` repository.  
-
-```
-What follows is unaltered from the parent (Digital-Grinnell/collectionbuilder-csv) repository's README.md file.
-```
-
 # Digital-Grinnell/collectionbuilder-csv
 
 This is a `fork` of [CollectionBuilder/collectionbuilder-csv](https://github.com/CollectionBuilder/collectionbuilder-csv) with added GC-specific additions from Mark M., Libby C., and others.  
