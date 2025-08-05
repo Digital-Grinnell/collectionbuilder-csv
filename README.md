@@ -2,12 +2,12 @@
 
 This is a `fork` of [CollectionBuilder/collectionbuilder-csv](https://github.com/CollectionBuilder/collectionbuilder-csv) with added GC-specific additions from Mark M., Libby C., and others.  
 
-> This repo should be the basis for all non-oral-history GC CB projects of the future.  Note that there is a separate GC template repo for Oral History projects because that's the way the CollectionBuilder folks have structured the underlying code.  
+> **This repo should be the basis for ALL (including projects with oral histories!) GC CB projects of the future.**  ~~Note that there is a separate GC template repo for Oral History projects because that's the way the CollectionBuilder folks have structured the underlying code.~~  
 
 See it in action at  
 ## https://victorious-sea-07a73ff10.2.azurestaticapps.net/ 
 
-# Bulding Locally
+# Building Locally
 
 Like other CB projects, the website from this repository can be easily built -- assuming your machine has all the necessary CB/Jekyll configuration -- using a simple command of the form:  
 
@@ -150,10 +150,23 @@ git push origin main  # or git push origin your-branch-name
 
 This updates your online fork with the changes you've pulled from the upstream.  
 
+## Special Oral History Considerations
 
-```
-What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.
-```
+Note that oral history objects (any audio or video objects with transcription) need some additional attention and metadata.  However, you do NOT need to add these REQUIRED metadata fields to your `_data/config-metadata.csv` file!   The additional column headings and metadata required in your CSV file is:  
+
+  - objectid: Unique identifier for each item
+  - title: Title of the oral history<sup>*</sup>
+  - format: Should include “oral history” for transcript items
+  - transcript-file: Name of the transcript file (without path)
+
+<sup>*</sup>The `title` field already exists in nearly every CB project and it's OK that `title` appears in the `_data/config-metadata.csv` file.  
+
+Final oral history note:  Your `transcript` filenames must EXACTLY match the names of the CSV files found in the `_data/transcripts` directory.  Don't put these files anywhere else, don't store them remotely and specify URLs, and don't include the `path` in your metadata file's `transcript-file` column, just the name of the file (with its extension) as it appears in your `_data/transcripts` directory.     
+
+
+# What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.
+**BEWARE! This information may be outdated!** 
+
 # CollectionBuilder-CSV
 
 CollectionBuilder-CSV is a robust and flexible "stand alone" template for creating digital collection and exhibit websites using Jekyll and a metadata CSV.
