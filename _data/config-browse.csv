@@ -5,3 +5,4 @@ collection, Collection,,,
 subject,,true
 location,Location,true,false,Location
 identifier,Identifier,true,false,
+interviewer,Interviwed by
