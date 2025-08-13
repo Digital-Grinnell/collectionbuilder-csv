@@ -163,6 +163,14 @@ Note that oral history objects (any audio or video objects with transcription) n
 
 Final oral history note:  Your `transcript` filenames must EXACTLY match the names of the CSV files found in the `_data/transcripts` directory.  Don't put these files anywhere else, don't store them remotely and specify URLs, and don't include the `path` in your metadata file's `transcript-file` column, just the name of the file (with its extension) as it appears in your `_data/transcripts` directory.     
 
+## Suggested Metadata CSV Column Headings
+
+The following CSV column headings were pulled from the `_data/grinnell-CB-CSV-demo.csv` file in this repository.  This is a `COMPLETE` list of fields that makes ALL features and options possible, including 6 fields for whatever you want!  Have fun with it!    
+
+```
+objectid,parentid,title,creator,date,description,focused_event,subject,people,location,latitude,longitude,source,identifier,type,format,language,rights,rightsstatement,display_template,WORKSPACE1,WORKSPACE2,WORKSPACE3,object_location,image_small,image_thumb,image_alt_text,object_transcript,bio,pdf,temp1,temp2,temp3
+```
+
 
 # What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.
 **BEWARE! This information may be outdated!** 
