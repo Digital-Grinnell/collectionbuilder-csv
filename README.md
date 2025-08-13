@@ -168,8 +168,12 @@ Final oral history note:  Your `transcript` filenames must EXACTLY match the nam
 The following CSV column headings were pulled from the `_data/grinnell-CB-CSV-demo.csv` file in this repository.  This is a `COMPLETE` list of fields that makes ALL features and options possible, including 6 fields for whatever you want!  Have fun with it!    
 
 ```
-objectid,parentid,title,creator,date,description,focused_event,subject,people,location,latitude,longitude,source,identifier,type,format,language,rights,rightsstatement,display_template,WORKSPACE1,WORKSPACE2,WORKSPACE3,object_location,image_small,image_thumb,image_alt_text,object_transcript,bio,pdf,temp1,temp2,temp3
+objectid,parentid,title,creator,date,description,focused_event,subject,people,location,latitude,longitude,source,identifier,type,format,language,display_template,WORKSPACE1,WORKSPACE2,WORKSPACE3,object_location,image_small,image_thumb,image_alt_text,object_transcript,bio,pdf,temp1,temp2,temp3,rights,rightsstatement
 ```
+
+## Markdown Objects
+
+Added as a Grinnell College feature, this project has the ability to render `markdown` (.md) documents as objects using a `display_template` value of `markdown`.  Note that .md files used in this manner MUST be stored locally in the project because, like `transcript` files, cloud storage will generally NOT serve a raw .md file for consumption by applications like _CollectionBuilder_.   Also, make sure your .md files contain `front matter`!  Markdown files without front matter appear as an empty span in the output!  
 
 
 # What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.
