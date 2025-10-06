@@ -46,9 +46,7 @@ metadata: grinnell-CB-CSV-demo
 #     filter: 'objectid'  
 
 ##########
-# Site/Organization Branding 
-#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
-#   To remove the branding, comment out these values, or delete them. 
+# ORGANIZATION SETTINGS
 #
 organization-name: "Grinnell College Libraries"
 organization-link: https://www.grinnell.edu/academics/libraries
@@ -70,6 +68,9 @@ organization-logo-nav: assets/img/nav-logo.png
 # JEKYLL_ENV=production jekyll build
 # (this is done automatically by gh-pages build)
 #
+# Library directory location. This allows you to customize where the standard assets are found.
+# provide a relative path in this repository or full url 
+lib-assets: /assets/lib
 # ignore stuff
 exclude: [docs/, Rakefile, rakelib/, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md]
 # compress CSS output
