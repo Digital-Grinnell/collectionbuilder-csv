@@ -4,6 +4,8 @@ This is a `fork` of [CollectionBuilder/collectionbuilder-csv](https://github.com
 
 > **This repo should be the basis for ALL (including projects with oral histories!) GC CB projects of the future.**  ~~Note that there is a separate GC template repo for Oral History projects because that's the way the CollectionBuilder folks have structured the underlying code.~~  
 
+> See the WORKFLOW.md document in this repository for guidance when updating this fork AND when creating a new GCCB (Grinnell College Collection Builder) project.  
+
 See it in action at  
 ## https://victorious-sea-07a73ff10.2.azurestaticapps.net/ 
 
