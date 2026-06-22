@@ -6,7 +6,7 @@ description,Description,,,DCTERMS.description,description
 collection,Collection,,,,DCTERMS.isPartOf,collection
 subject,Subjects,true,,DCTERMS.subject,keywords
 people,People,true,,DCTERMS.keywords,person,    
-location,Location,,,,contentLocation
+location,Location,,,DCTERMS.coverage,contentLocation
 latitude,Latitude,,,,
 longitude,Longitude,,,,
 source,Source,,,,

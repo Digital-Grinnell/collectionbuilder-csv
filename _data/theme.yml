@@ -14,10 +14,12 @@ home-page-visualization: true # true / false, if true, the visualization will ap
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
 featured-image: https://collectionbuilder.blob.core.windows.net/config/d8_hero_burling_exterior_brighter_0.png
-# optional: add extra padding around collection title for a larger image feature. 
+featured-image-alt-text: # add alt text if using url for featured-image (objectid will be automatic from metadata)
+# optional: add extra padding above collection title for a larger image feature. 
 home-title-y-padding: 5em # the margin from the top your title portion will appear.
 # optional: change position of background image, center, top, bottom
-home-banner-image-position: center # Default is top
+home-banner-image-position: center # Default is center
+
 
 ##########
 # Browse PAGE
@@ -126,16 +128,18 @@ base-layout: CB # OHD or CB
 #
 
 # NAVBAR COLORS [optional!]
-# navbar text color
-# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
-navbar-color: navbar-dark
-# navbar background color
+# use Bootstrap Navbar color scheme options, https://getbootstrap.com/docs/5.3/components/navbar/#color-schemes
+#
+# navbar text color scheme
+# Choose from "light" for use with light background colors, or "dark" for dark background colors
+navbar-color: dark
+# navbar background color, https://getbootstrap.com/docs/5.3/utilities/background/
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
-navbar-background: bg-dark
+navbar-background: bg-black
 
 # BOOTSWATCH THEMES [optional!]
 # You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
-# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
+# Choose from: brite; cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; morph; pulse; quartz; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; vapor; yeti; zephyr 
 bootswatch: # leave blank or comment out for plain bootstrap
 
 # THEME FONTS [optional!]
