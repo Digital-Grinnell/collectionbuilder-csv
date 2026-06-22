@@ -175,7 +175,9 @@ objectid,parentid,title,creator,date,description,focused_event,subject,people,lo
 
 ## Markdown Objects
 
-Added as a Grinnell College feature, this project has the ability to render `markdown` (.md) documents as objects using a `display_template` value of `markdown`.  Note that .md files used in this manner MUST be stored locally in the project because, like `transcript` files, cloud storage will generally NOT serve a raw .md file for consumption by applications like _CollectionBuilder_.   Also, make sure your .md files contain `front matter`!  Markdown files without front matter appear as an empty span in the output!  
+No longer supported here since .md files cannot be served from web addressable storage.  Convert your .md files to .pdf and display those instead.  
+
+~~Added as a Grinnell College feature, this project has the ability to render `markdown` (.md) documents as objects using a `display_template` value of `markdown`.  Note that .md files used in this manner MUST be stored locally in the project because, like `transcript` files, cloud storage will generally NOT serve a raw .md file for consumption by applications like _CollectionBuilder_.   Also, make sure your .md files contain `front matter`!  Markdown files without front matter appear as an empty span in the output!~~  
 
 
 # What follows is from the original `CollectionBuilder/collectionbuilder-csv` repository.

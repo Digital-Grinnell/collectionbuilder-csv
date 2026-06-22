@@ -14,8 +14,7 @@
 
 We want to make engaging interpretive pages easier to create, so CollectionBuilder gives you tools to write *with* your collection content!
 
-The template comes with a customizable "About" page layout designed for long form content with rich media embeds.
-Content is written in [Markdown](https://guides.github.com/features/mastering-markdown/) and enhanced using "includes" that pull in collection content, external media, and [Bootstrap](https://getbootstrap.com/) features like cards and modals.
+The template comes with a customizable "About" page layout designed for long form content with rich media embeds. Content is written in [Markdown](https://guides.github.com/features/mastering-markdown/) and enhanced using "includes" that pull in collection content, external media, and [Bootstrap](https://getbootstrap.com/) features like cards and modals.
 We hope this makes it easier for site builders to develop the collection AND add interesting and engaging contextual information. 
 
 Each "include" file has several options, which are documented in the files themselves--copy the examples to see how it works with your content! 
