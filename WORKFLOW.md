@@ -314,5 +314,5 @@ Standard CollectionBuilder Structure:
 
 ---
 
-**Last Updated:** June 2026
-**Maintained By:** Grinnell College Digital Library Applications Developer
+**Last Updated:** June 2026  
+**Maintained By:** Grinnell College &bull; Digital Library Applications Developer
