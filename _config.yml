@@ -28,6 +28,8 @@ description: "CollectionBuilder-CSV is a template, with some Grinnell College fe
 keywords: Grinnell College; Grinnell, Iowa;
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: Digital Grinnell
+# timezone used for Liquid date rendering (e.g., footer last-updated timestamp)
+timezone: America/Chicago
 
 ##########
 # COLLECTION SETTINGS
