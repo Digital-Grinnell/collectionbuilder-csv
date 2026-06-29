@@ -1,4 +1,18 @@
-# GCCB Workflow Guide
+<h1> GCCB Workflow Guide</h1>
+
+<style>
+@media print {
+   h1 {
+      color: green;
+      font-weight: bold;
+   }
+
+   .print-page-break {
+      break-before: page;
+      page-break-before: always;
+   }
+}
+</style>
 
 This document explains how to maintain the `Digital-Grinnell/collectionbuilder-csv` fork and create new Grinnell College CollectionBuilder (GCCB) sites.
 
@@ -6,7 +20,7 @@ This document explains how to maintain the `Digital-Grinnell/collectionbuilder-c
 
 This repository is a fork of [CollectionBuilder/collectionbuilder-csv](https://github.com/CollectionBuilder/collectionbuilder-csv) with Grinnell College-specific customizations and Oral History features integrated. It serves as the base template for all GCCB sites.
 
-## Maintaining the Fork: Syncing with Upstream
+<h1>Maintaining the Fork: Syncing with Upstream</h1>
 
 ### Initial Setup (One-Time)
 
@@ -63,7 +77,8 @@ git remote -v  # Verify remotes are configured
   git push origin backup-pre-sync-$(date +%Y%m%d)
   ```
 
-## Creating New GCCB Sites
+
+<h1 class="print-page-break">Creating New GCCB Sites</h1>
 
 ### Method 1: Using GitHub Template (Recommended)
 
@@ -118,11 +133,11 @@ tagline: [Your Collection Tagline]
 description: [Brief description]
 author: Grinnell College Libraries
 
-# Collection-specific settings
+<h1 class="print-page-break">Collection-specific settings</h1>
 url: https://[your-site-url]
 baseurl: /[collection-name]
 
-# Metadata
+<h1 class="print-page-break">Metadata</h1>
 metadata: [your-metadata-filename].csv
 ```
 
@@ -207,13 +222,13 @@ Customize appearance:
 The project includes rake tasks for common operations:
 
 ```bash
-# Generate derivatives for images
+<h1 class="print-page-break">Generate derivatives for images</h1>
 rake generate_derivatives
 
-# Deploy to server (if configured)
+<h1 class="print-page-break">Deploy to server (if configured)</h1>
 rake deploy
 
-# See all available tasks
+<h1 class="print-page-break">See all available tasks</h1>
 rake -T
 ```
 
@@ -238,7 +253,7 @@ See `docs/rake_tasks.md` for details.
 
 Configure deployment in `Rakefile` or use provided scripts in `rakelib/`.
 
-## Maintaining GCCB Sites
+<h1 class="print-page-break">Maintaining GCCB Sites</h1>
 
 ### Regular Updates
 
