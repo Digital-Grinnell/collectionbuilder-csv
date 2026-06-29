@@ -83,6 +83,8 @@ This workflow uses GitHub Actions to deploy and you can see the status of deploy
 
 > Note that pushing changes to the `main` branch of this repository will automatically re-build https://victorious-sea-07a73ff10.2.azurestaticapps.net/!  
 
+If you need to provision a new Azure Static Web App from this repository, use [scripts/create_azure_static_web_app.py](scripts/create_azure_static_web_app.py). The script will create the Azure resource group if needed, connect the current repo and branch, and print the deployed site URL when it finishes.
+
 # Updated Local Clone from Upstream
 
 This is the recommended workflow...  

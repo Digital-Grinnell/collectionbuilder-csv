@@ -327,6 +327,26 @@ Standard CollectionBuilder Structure:
 - Verify filenames in metadata match actual files in `objects/`
 - Check file paths and extensions (case-sensitive on some systems)
 
+<h1 class="print-page-break">Creating Azure Static Web Apps</h1>
+
+This repository includes [scripts/create_azure_static_web_app.py](scripts/create_azure_static_web_app.py) for provisioning a new Azure Static Web App from the current clone. It is intended for cases where you want to create a fresh deployment that follows the same Jekyll build pattern as the existing `victorious-sea-07a73ff10` site.
+
+### Requirements
+
+- Azure CLI installed and authenticated with `az login`
+- GitHub CLI installed and authenticated with `gh auth token`, or pass a token with `--token`
+- A GitHub repository origin remote that points to the repo you want to deploy
+
+### Example
+
+```bash
+python3 scripts/create_azure_static_web_app.py \
+   --name my-static-web-app \
+   --resource-group my-static-web-app-rg
+```
+
+The script creates the resource group if needed, provisions the Azure Static Web App, and then prints the production address in the form `https://<defaultHostname>` when the deployment is ready.
+
 ---
 
 **Last Updated:** June 2026  
