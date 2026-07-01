@@ -341,9 +341,10 @@ This repository includes [scripts/create_azure_static_web_app.py](scripts/create
 
 ```bash
 python3 scripts/create_azure_static_web_app.py \
-   --name my-static-web-app \
-   --resource-group my-static-web-app-rg
+   --name my-static-web-app
 ```
+
+By default, the script uses `GCCB_Resources` for `--resource-group`.
 
 The script creates the resource group if needed, provisions the Azure Static Web App, and then prints the production address in the form `https://<defaultHostname>` when the deployment is ready.
 

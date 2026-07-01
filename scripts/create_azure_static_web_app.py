@@ -11,8 +11,7 @@ What it does:
 
 Usage:
     python3 scripts/create_azure_static_web_app.py \
-        --name my-static-app \
-        --resource-group my-resource-group
+        --name my-static-app
 
 You can also override the repo URL, branch, and build locations if needed.
 """
@@ -32,8 +31,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--name", required=True, help="Azure Static Web App name")
     parser.add_argument(
         "--resource-group",
-        required=True,
-        help="Azure resource group to create or reuse",
+        default="GCCB_Resources",
+        help="Azure resource group to create or reuse (default: GCCB_Resources)",
     )
     parser.add_argument(
         "--location",
